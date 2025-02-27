@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Guess the Color Game</title>
 </head>
+
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <div class="card" data-suit="spade" data-value="A"> <img src="spade.svg" alt=""></div>
-  <div class="card" data-suit="spade" data-value="2"></div>
-  <div class="card" data-suit="spade" data-value="3"></div>
-  <div class="card" data-suit="spade" data-value="4"></div>
-  <div class="card" data-suit="spade" data-value="5"></div>
-  <div class="card" data-suit="spade" data-value="6"></div>
-  <div class="card" data-suit="spade" data-value="7"></div>
-  <div class="card" data-suit="spade" data-value="8"></div>
-  <div class="card" data-suit="spade" data-value="9"></div>
-  <div class="card" data-suit="spade" data-value="10"></div>
-  <div class="card" data-suit="spade" data-value="J"></div>
-  <div class="card" data-suit="spade" data-value="Q"></div>
-  <div class="card" data-suit="spade" data-value="K"></div>
+<header>
+<h1 data-testid="gameInstructions">Guess The Correct Color!</h1>
+<p class="rule">Click on any of the box color to guess the right color.</p>
+</header>
+<main>
+<div class="boxesDiv">
+<div data-testid="colorBox" id="guessBox">?</div>
+<div class="colorOptions">
+<div data-testid="colorOption" id="#EFBC9B" class="guesses"></div>
+<div data-testid="colorOption" id="#9D6A89" class="guesses"></div>
+<div data-testid="colorOption" id="#A8B4A5" class="guesses"></div>
+<div data-testid="colorOption" id="#395C6B" class="guesses"></div>
+<div data-testid="colorOption" id="#80A4ED" class="guesses"></div>
+<div data-testid="colorOption" id="#3C91E6" class="guesses"></div>
+</div>
+</div>
+
+<div class="buttons">
+<p>Score: <span id="score" data-testid="score">5</span></p>
+<p>High Score: <span id="highScore">0</span></p>
+<p id="message" data-testid="gameStatus">Start playing ...</p>
+<button id="again" data-testid="newGameButton">New Game</button>
+</div>
+</main>
+
+<script src="apps.js"></script>
 </body>
-</html>
-    
-</body>
+
 </html>
